@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const setLanguage = (lang) => {
-    lang = ["en", "es"].includes(lang) ? lang : "en";
+    lang = validLanguages.includes(lang) ? lang : "en";
+    document.querySelector("html").lang = navigator.language;
     localStorage.setItem("lang", lang);
     currentLang = lang;
     updateCopy();
