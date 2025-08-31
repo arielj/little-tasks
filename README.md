@@ -1,2 +1,3 @@
-# little-tasks
-Little tasks: do something new every day!
+# LittleTasks
+
+LittleTasks: do something new every day!
