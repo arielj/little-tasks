@@ -8,6 +8,7 @@ body {
   --text-color: black;
   --main-font: "Playwrite DE Grund", cursive;
   height: 100vh;
+  height: 100svh;
   margin: 0;
   padding: 1rem;
   background: var(--light-background);
