@@ -1,0 +1,78 @@
+html,
+body {
+  --green: #475c42;
+  --light-background: #f5e9d8;
+  --brown: #7d6b57;
+  --light-brown: #968972;
+  --accent: #f4e5c8;
+  --text-color: black;
+  --main-font: "Playwrite DE Grund", cursive;
+  height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  background: var(--light-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-block-end: 5rem;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+#languages {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  button {
+    background: var(--brown);
+    border: none;
+    color: var(--accent);
+    border-radius: 5px;
+    padding: 3px 7px;
+    cursor: pointer;
+    &:hover {
+      background: color-mix(in srgb, var(--brown), black 50%);
+    }
+  }
+}
+
+#intro_text {
+  font-size: clamp(2rem, 7vmin, 3.5rem);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#current_task {
+  font-size: clamp(2.5rem, 9vmin, 5rem);
+  font-family: var(--main-font);
+  text-align: center;
+  font-weight: bold;
+  max-width: 1000px;
+  line-height: clamp(4rem, 13vmin, 6rem);
+}
+
+#footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  color: var(--green);
+  font-weight: bold;
+}
+
+#new_task {
+  margin-block-start: 3rem;
+  background: var(--light-brown);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 3rem;
+  font-size: 1.2rem;
+  color: var(--accent);
+
+  &:hover {
+    background: color-mix(in srgb, var(--light-brown), black 50%);
+  }
+}
